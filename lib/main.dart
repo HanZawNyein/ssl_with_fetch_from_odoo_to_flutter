@@ -14,13 +14,13 @@ class NewsApiService {
 
   Future<void> fetchArticle() async {
     try {
-      final uri = Uri.parse('https://odoo.ycfitness.xyz/v2/api/login');
+      final uri = Uri.parse('https://yourdomain.com/login');
       final response = await client.post(
         uri,
         headers: {'Content-Type': 'application/json'},
         body: json.encode({
           "jsonrpc": "2.0",
-          "params": {"phone": "admin", "password": "admin"}
+          "params": {"phone": "xxx", "password": "xxx"}
         }),
       );
 
